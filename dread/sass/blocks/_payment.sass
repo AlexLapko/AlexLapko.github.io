@@ -1,0 +1,147 @@
+.payment
+	background-color: #2A2A2A
+	padding-top: 148px
+	padding-bottom: 168px
+	color: #E0CEA9
+	&-wrap
+		display: flex
+		justify-content: space-between
+	&__subtitle
+		font-size: 22px
+		display: inline-block
+		margin-bottom: 2px
+	&__title
+		font-family: 'Bebas Neue Bold'
+		font-size: 143px
+		display: inline-block
+		margin-bottom: 119px
+		text-transform: uppercase
+	&-block
+		display: flex
+		justify-content: space-between
+		width: 413px
+		text-transform: uppercase
+	&-price
+		display: flex
+		flex-direction: column
+		&__value
+			font-size: 58px
+			font-family: 'Bebas Neue Bold'
+			margin-bottom: 15px
+		&__text
+			font-family: 'Gilroy Bold'
+			font-size: 22px
+		&-common
+			color: rgba(224, 206, 169, 0.29)
+	&-form
+		display: flex
+		flex-direction: column
+	&__input
+		width: 555px
+		margin-bottom: 22px
+		border-radius: 7px
+		border: 2px solid #E0CEA9
+		color: #E0CEA9
+		padding: 30px 0
+		padding-left: 33px
+		background: none
+		text-transform: uppercase
+		font-size: 20px
+		outline: none
+		&::placeholder
+			color: #E0CEA9
+	&__button
+		height: 89px
+		background-color: #E0CEA9
+		border-radius: 7px
+		text-transform: uppercase
+		color: #2A2A2A
+		font-size: 20px
+		& span
+			margin-left: 31px
+			font-weight: 900
+	
+@media (max-width: 1550px)
+	.payment
+		&__input
+			width: 450px
+		&__button
+			width: 450px
+@media (max-width: 1400px)
+	.payment
+		&__subtitle
+			font-size: 20px
+		&__title
+			font-size: 120px
+@media (max-width: 1300px)
+	.payment
+		&__subtitle
+			font-size: 19px
+		&__title
+			font-size: 100px
+		&__input
+			width: 450px
+			font-size: 18px
+			width: 400px
+		&__button
+			width: 450px
+			font-size: 18px
+			width: 400px
+@media (max-width: 1200px)
+	.payment
+		&__subtitle
+			font-size: 19px
+			width: 400px
+@media (max-width: 1100px)
+	.payment
+		&__title
+			font-size: 90px
+		&-block
+			width: 350px
+		&-price
+			&__value
+				font-size: 50px
+			&__text
+				font-size: 20px
+@media (max-width: 992px)
+	.payment
+		padding-top: 60px
+		padding-bottom: 60px
+		&__subtitle
+			display: block
+			max-width: 90%
+			margin: auto
+			text-align: center
+			margin-bottom: 25px
+			
+		&__title
+			margin-bottom: 30px
+		&-wrap
+			flex-direction: column
+			align-items: center
+		&-info
+			margin-bottom: 30px
+			text-align: center
+		&-block
+			display: none
+		&__input
+			width: 100%
+		&__button
+			width: 100%
+			&:hover
+				background-color: #E0CEA9
+@media (max-width: 440px)
+	.payment
+		&__button
+			font-size: 16px
+@media (max-width: 413px)
+	.payment
+		&__subtitle
+			font-size: 17px
+			width: 90%
+		&__title
+			font-size: 60px
+			margin-bottom: 15px
+		&__button
+			padding: 20px 7px
+			font-size: 14px

@@ -1,0 +1,221 @@
+.review
+	padding-top: 220px
+	padding-bottom: 116px
+	background-color: #1E1E1E
+	color: #E0CEA9
+	position: relative
+	&-head
+		display: flex
+		align-items: center
+		margin-bottom: 115px
+		&-block
+			display: flex
+			align-items: center
+			justify-content: space-between
+			width: 248px		
+		&__line
+			margin-top: -3px
+			width: 50px
+			height: 4px
+			border: none
+			background-color: #E0CEA9
+		&__text
+			text-transform: uppercase
+			font-weight: 900
+			font-size: 20px
+	&__title
+			font-family: 'Bebas Neue Bold'
+			text-transform: uppercase
+			font-size: 75px
+			width: 100%
+			display: flex
+			margin-left: 17%
+	&-courseName
+		font-family: 'Gilroy Bold'
+		font-size: 260px
+		text-transform: uppercase
+		letter-spacing: 0.155em
+		color: rgba(224, 206, 169, 0.02)
+		position: absolute
+		top: 630px
+		left: 10px
+
+.slick-slide
+	outline: none
+	& img
+		margin: auto
+		height: 812px
+		border-radius: 30px
+.arrow__left
+	width: 328px
+	text-transform: uppercase
+	display: flex
+	align-items: center
+	justify-content: space-between
+	&:hover
+		cursor: pointer
+	& span
+		font-family: 'Gilroy Bold'
+		font-size: 16px
+.arrow__right
+	width: 328px
+	text-transform: uppercase
+	display: flex
+	align-items: center
+	justify-content: space-between
+	&:hover
+		cursor: pointer
+	& span
+		font-family: 'Gilroy Bold'
+		font-size: 16px
+.arrows
+	display: flex
+	justify-content: space-between
+	transform: translateY(-482px)
+
+@media (max-width: 1895px)
+	.review
+		&-courseName
+			font-size: 255px		
+@media (max-width: 1855px)
+	.review
+		&-courseName
+			font-size: 245px	
+@media (max-width: 1785px)
+	.review
+		&-courseName
+			font-size: 230px	
+@media (max-width: 1675px)
+	.review
+		&-courseName
+			font-size: 215px	
+@media (max-width: 1570px)
+	.review
+		&-courseName
+			font-size: 200px
+			top: 665px
+@media (max-width: 1460px)
+	.review
+		&-courseName
+			font-size: 180px
+			top: 665px
+@media (max-width: 1400px)
+	.arrow__left, .arrow__right
+		width: 240px
+@media (max-width: 1315px)
+	.review
+		&-courseName
+			font-size: 160px
+			top: 690px
+@media (max-width: 1200px)
+	.review
+		&-courseName
+			font-size: 140px
+			top: 725px
+	.slick-slide
+		& img
+			height: 750px
+			width: 363px
+	.arrow__left, .arrow__right
+		width: 210px
+		& span
+			font-size: 13px
+@media (max-width: 1100px)
+	.review
+		&-courseName
+			font-size: 130px
+			top: 695px
+	.slick-slide
+		& img
+			height: 710px
+			width: 343px
+	.arrow__left, .arrow__right
+		width: 210px
+@media (max-width: 1480px)
+	.review
+		&__title
+			font-size: 60px
+			margin-left: 15%
+@media (max-width: 1330px)
+	.review
+		&__title
+			font-size: 50px
+			margin-left: 13%
+@media (max-width: 1290px)
+	.review
+		&__title
+			font-size: 47px
+			margin-left: 12%
+@media (max-width: 1100px)
+	.review
+		&__title
+			font-size: 40px
+			margin-left: 10%
+@media (max-width: 992px)
+	.review
+		padding-top: 60px
+		padding-bottom: 60px
+		&-courseName
+			display: none
+		&-head
+			display: flex
+			flex-wrap: wrap
+			margin-bottom: 50px
+			&-block
+				max-width: 180px
+				margin-bottom: 20px
+		&__title
+			margin: auto
+			text-align: center
+			display: block
+		
+	.arrow-text
+		display: none
+	.arrow
+		&__right
+			display: flex
+			justify-content: flex-end
+			opacity: 0.6
+			&:hover
+				cursor: default
+			& img
+				width: 50px
+				height: 50px
+		&__left
+			opacity: 0.6
+			&:hover
+				cursor: default
+			& img
+				width: 50px
+				height: 50px
+				
+@media (max-width: 700px)
+	.review
+		&__title
+			font-size: 38px
+@media (max-width: 640px)
+	.review
+		&__title
+			font-size: 34px
+	
+@media (max-width: 500px)
+	.slick-slide
+		& img
+			height: 550px
+			width: 263px
+	.arrows
+		transform: translateY(-350px)
+@media (max-width: 413px)
+	.review
+		&-head
+			&__text
+				font-size: 15px
+		&__title
+			font-size: 25px
+			width: 85%
+	.slick-slide
+		& img
+			height: 450px
+			width: 213px
+	.arrows
+		transform: translateY(-250px)

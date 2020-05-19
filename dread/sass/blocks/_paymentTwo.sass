@@ -1,0 +1,171 @@
+.paymentTwo
+	background-color: #2A2A2A
+	padding-top: 139px
+	padding-bottom: 175px
+	color: #E0CEA9
+	&-wrap
+		display: flex
+		justify-content: space-between
+	&__subtitle
+		font-size: 22px
+		display: inline-block
+		margin-bottom: -1px
+	&__title
+		font-family: 'Gilroy Bold'
+		font-size: 99px
+		display: inline-block
+		margin-bottom: 50px
+		text-transform: uppercase
+		letter-spacing: 0.5px
+	&-block
+		display: flex
+		justify-content: space-between
+		width: 420px
+		text-transform: uppercase
+		margin-bottom: 68px
+	&-price
+		display: flex
+		flex-direction: column
+		&__value
+			font-size: 58px
+			font-family: 'Gilroy Bold'
+			margin-bottom: 8px
+		&__text
+			font-family: 'Gilroy Bold'
+			font-size: 22px
+		&-common
+			color: rgba(224, 206, 169, 0.29)
+	&-info
+		&__text
+			display: block
+			line-height: 25px
+			font-size: 22px
+			max-width: 638px
+	&-form
+		display: flex
+		flex-direction: column
+	&__input
+		width: 555px
+		margin-bottom: 23px
+		border-radius: 7px
+		border: 2px solid #E0CEA9
+		color: #E0CEA9
+		padding: 30px 0
+		padding-left: 33px
+		background: none
+		text-transform: uppercase
+		font-size: 20px
+		outline: none
+		&::placeholder
+			color: #E0CEA9
+	&__button
+		height: 89px
+		background-color: #E0CEA9
+		border-radius: 7px
+		text-transform: uppercase
+		color: #2A2A2A
+		font-size: 20px
+		& span
+			margin-left: 31px
+			font-weight: 900
+
+
+@media (max-width: 1550px)
+	.paymentTwo
+		&__input
+			width: 450px
+		&__button
+			width: 450px
+@media (max-width: 1400px)
+	.paymentTwo
+		&__subtitle
+			font-size: 20px
+		&__title
+			font-size: 85px
+		&-info
+			&__text
+				max-width: 500px
+@media (max-width: 1300px)
+	.paymentTwo
+		&__subtitle
+			font-size: 19px
+		&__input
+			width: 450px
+			font-size: 18px
+			width: 400px
+		&__button
+			width: 450px
+			font-size: 18px
+			width: 400px
+@media (max-width: 1230px)
+	.paymentTwo
+		&__subtitle
+			width: 390px
+		&__title
+			font-size: 80px
+@media (max-width: 1180px)
+	.paymentTwo
+		&__title
+			font-size: 70px
+		&-info
+			&__text
+				font-size: 20px
+@media (max-width: 1100px)
+	.paymentTwo
+		&__title
+			font-size: 60px
+		&-block
+			width: 350px
+		&-price
+			&__value
+				font-size: 50px
+			&__text
+				font-size: 20px
+		&-info
+			&__text
+				max-width: 400px
+@media (max-width: 992px)
+	.paymentTwo
+		padding-top: 60px
+		padding-bottom: 60px
+		&__subtitle
+			display: block
+			max-width: 90%
+			margin: auto
+			text-align: center
+			margin-bottom: 25px
+		&__title
+			margin-bottom: 30px
+		&-wrap
+			flex-direction: column
+			align-items: center
+		&-info
+			margin-bottom: 30px
+			text-align: center
+		&-block
+			display: none
+		&__input
+			width: 100%
+		&__button
+			width: 100%
+			&:hover
+				background-color: #E0CEA9
+@media (max-width: 440px)
+	.paymentTwo
+		&__button
+			font-size: 16px
+@media (max-width: 413px)
+	.paymentTwo
+		&__subtitle
+			font-size: 17px
+			width: 90%
+		&__title
+			font-size: 40px
+			margin-bottom: 15px
+		&__button
+			padding: 20px 7px
+			font-size: 14px
+		&-info
+			&__text
+				font-size: 15px
+		
