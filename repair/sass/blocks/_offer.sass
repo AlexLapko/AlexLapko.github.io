@@ -1,0 +1,121 @@
+.offer
+	background: url('../img/offer-bg.jpg') no-repeat
+	background-position: right 
+	background-size: contain
+	position: relative
+	padding-bottom: 42px
+	&:before
+		position: absolute
+		content: ''
+		width: 50%
+		height: 100%
+		top: 0
+		left: 0
+		background-color: #fff
+	&-block
+		position: relative
+		width: 50%
+		padding-right: 90px
+		transform: translate(0px, -32px)
+	&__title
+		max-width: 360px
+		line-height: 35px
+		margin-bottom: 20px
+		text-align: left
+	&__subtitle
+		max-width: 250px
+		margin-bottom: 32px
+	&__input
+		margin-bottom: 30px
+		width: 240px
+		outline: none
+		&:first-child
+			margin-right: 10px
+		&:focus
+			outline: none
+			border: 1px solid $main-color
+	&__button
+		width: 100%
+		min-height: 70px
+		+bold		
+	&-info
+		display: flex
+		justify-content: space-between
+		font-size: 15px
+		line-height: 24px
+		margin-top: 9px
+	&__text
+		max-width: 46%
+		margin-right: 68px
+	&__call
+		max-width: 46%
+	&__number
+		+bold	
+		text-decoration: none
+		color: $text-color
+		display: block
+@media (max-width: 1200px)
+	.offer
+		background-size: cover
+		&__title
+			max-width: 600px
+		&__button
+			font-size: 13px
+		&__input
+			width: 100%
+			margin-bottom: 25px
+		&__text
+			font-size: 13px
+			margin-right: 20px
+		&__call
+			font-size: 13px
+@media (max-width: 768px)
+	.offer
+		padding: 50px 0
+		padding-bottom: 0
+		background: #fff
+		&-block
+			width: 100%
+			padding-right: 0
+		&__title
+			text-align: center
+		&__subtitle
+			text-align: center
+			margin: auto
+			margin-bottom: 15px
+			max-width: 400px
+				
+@media (max-width: 567px)
+	.section
+		padding: 68px 0 20px 0
+	.offer
+		&__title
+			font-size: 18px
+			line-height: 1.2
+			width: 98%
+			text-align: left
+		&__subtitle
+			font-size: 14px
+			margin-bottom: 25px
+			text-align: left
+		&__button
+			font-size: 14px
+			padding: 19px 62px
+			line-height: 1.2
+			margin-bottom: 12px
+		&-info
+			display: block
+			min-width: 100%
+			font-size: 15px
+			padding-left: 5px
+		&__text
+			margin: 0
+			padding: 0
+			min-width: 85%
+			margin-bottom: 6px
+			font-size: 15px
+		&__call
+			margin: 0
+			padding: 0
+			min-width: 70%
+			font-size: 15px

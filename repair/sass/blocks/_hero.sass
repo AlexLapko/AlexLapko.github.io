@@ -1,0 +1,114 @@
+.hero
+	padding-top: 48px
+	padding-bottom: 43px
+	background-color: $background-color
+	&-block
+		display: flex
+	&-text
+		flex-basis: 48%
+		padding-right: 20px
+		&__title
+			font-size: 41px
+			line-height: 55px
+			margin-bottom: 42px
+			transform: translate(-3px, 4px)
+			+bold
+		&__subtitle
+			display: inline-block
+			font-size: 20px;
+			margin-bottom: 68px
+			+bold
+	&-list
+		margin: 0
+		padding: 0
+		&__item
+			display: flex
+			align-items: center
+			margin-bottom: 32px
+			&:last-child
+				margin-bottom: 0
+		&__image
+			width: 37px
+			height: 37px
+			border: 2px solid #ffd200
+			border-radius: 50%
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-right: 33px
+			transform: translate(2px, 1px)
+		&__text
+			max-width: 300px
+			font-size: 14px
+			line-height: 20px
+	&-image
+		margin-left: 38px
+		max-width: 570px
+		
+@media (max-width: 1200px)
+	.hero
+		padding-top: 50px
+		&-list
+			margin-bottom: 44px
+			width: 305px
+			&__item
+				justify-content: flex-start
+		&-text
+			padding: 0
+			&__title
+				font-size: 30px
+			&__subtitle
+				font-size: 19px
+				max-width: 350px
+		&-image
+			margin: auto
+@media (max-width: 992px)
+	.hero
+		&-block
+			flex-direction: column
+		&-list
+			&__image
+				margin-right: 25px
+@media (max-width: 768px)
+	.hero
+		padding: 29px 0px
+		&-text
+			&__title
+				transform: translate(4px, -3px)
+				font-size: 24px
+				line-height: 1.2
+				margin-bottom: 5px
+				+bold
+			&__subtitle
+				transform: translate(6px, 0px)
+				font-size: 16px
+				+bold
+				margin-bottom: 28px
+				line-height: 1.2
+		&-list
+			&__item
+				display: flex
+				align-items: center
+				margin-bottom: 24px
+			&__text
+				font-size: 12px
+				line-height: 1.2
+			&__image
+				margin-right: 17px
+		&-image
+			transform: translateY(-9px)
+			width: 276px
+@media (max-width: 567px)
+	.hero
+		padding-bottom: 34px
+		&-text
+			text-align: left	
+		&-list
+			width: 280px
+			&__item
+				justify-content: flex-start
+	
+					
+				
+
+		

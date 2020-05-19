@@ -1,0 +1,46 @@
+.portfolio
+	background: $background-color url('../img/portfolio-pattern.jpg') repeat-y center left
+	background-size: 50%
+	padding-bottom: 80px
+	&__title
+		max-width: 900px
+		margin: auto
+		margin-bottom: 93px
+		font-size: 30px
+		+bold
+		line-height: 45px
+.slider
+	&__image
+		margin: auto
+.owl-nav
+	margin: auto
+	margin-top: 68px
+	width: 120px
+	display: flex
+	justify-content: space-between
+.owl-item img 
+  display: block
+  max-width: 370px
+  width: 100%
+.owl-prev, .owl-next
+	outline: none
+
+@media (max-width: 1200px)
+	.portfolio
+		padding: 50px 0
+		&__title
+			font-size: 24px
+			margin-bottom: 50px
+@media (max-width: 567px)
+	.portfolio
+		padding-top: 40px
+		padding-bottom: 41px
+		&__title
+			font-size: 18px
+			line-height: 1.2
+			margin-bottom: 40px
+	.owl-item img 
+		max-width: 246px
+		width: 100%
+	.owl-prev, .owl-next
+		margin-top: -20px
