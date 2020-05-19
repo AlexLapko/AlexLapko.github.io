@@ -1,0 +1,213 @@
+.contacts
+	padding: 138px 0 162px 0
+	&-info
+		display: flex
+		justify-content: space-between
+	&-form
+		width: 43%
+		&__title
+			color: $title-color
+			font-family: 'Roboto Bold'
+			font-size: 30px
+			margin-bottom: 51px
+		&__subtitle
+			display: block
+			color: $text-color
+			font-family: 'Roboto Bold'
+			font-size: 14px
+			margin-bottom: 85px
+			line-height: 1.7
+		&__block
+			display: block
+			flex-direction: column
+			padding: 81px 73px
+			box-shadow: 0 10px 38px rgba(18, 31, 54, 0.07)
+			width: 562px
+		&__input
+			width: 100%
+			margin-bottom: 16px
+			background-color: $background-color
+			border: none
+			color: $text-color
+			font-family: "Roboto Bold"
+			font-size: 14px
+			padding: 24px 0px 23px 45px
+			outline: none
+			&:focus
+				outline: none
+				border: 1px solid $main-color
+			&__question
+				width: 100%
+				margin-bottom: 41px
+				background-color: $background-color
+				border: none
+				color: $text-color
+				font-family: "Roboto Bold"
+				font-size: 14px
+				padding: 25px 45px 129px 45px
+				outline: none		
+				&:focus
+					outline: none
+					border: 1px solid $main-color	
+		&__button
+			width: 100%
+			background: $gradient
+			color: #fff
+			&:hover 
+				background: #2acfd0
+	&-information
+		width: 49%
+.information
+	&-map
+		position: relative
+		width: 584px
+		height: 610px
+		box-shadow: 0 10px 38px rgba(18, 31, 54, 0.07)
+		margin-bottom: 55px
+		&__text
+			color: $text-color
+			font-family: 'Roboto Bold'
+			font-size: 15px
+			position: absolute
+			bottom: 26px
+			line-height: 1.6
+			max-width: 475px
+			margin-left: 55px
+	&__title
+		color: $title-color
+		font-family: 'Roboto Bold'
+		font-size: 30px
+		margin-bottom: 36px
+	&-contacts
+		display: flex
+		justify-content: space-between
+	&-data
+		max-width: 190px
+		&__title
+			display: block
+			color: $main-color
+			font-family: 'Roboto Bold'
+			font-size: 14px
+			margin-bottom: 7px
+		&__text
+			font-size: 14px
+			text-decoration: none
+			color: #242424
+			font-style: normal
+			display: block
+			line-height: 24px
+.map
+	position: absolute
+	top: 0
+	width: 100%
+.contacts-form__block input::placeholder
+	color: $text-color
+
+@media (max-width: 1300px)
+	.contacts
+		padding: 50px 0
+		&-form
+			&__block
+				max-width: 400px
+				padding: 41px 33px
+	.information
+		&-map
+			max-width: 450px
+			margin-bottom: 20px
+			&__text
+				width: 80%
+		&__title
+			font-size: 25px
+			margin-bottom: 15px
+		&-data
+			&__title
+				font-size: 12px
+			&__text
+				font-size: 12px
+
+@media (max-width: 992px)
+	.contacts
+		&-info
+			flex-direction: column
+			align-items: center
+		&-form
+			width: 100%
+			&__title
+				text-align: center
+				margin-bottom: 25px
+			&__subtitle
+				width: 80%
+				text-align: center
+				margin: auto
+				margin-bottom: 25px
+			&__block
+				margin: auto
+			&__button
+				&:hover 
+					background: $gradient
+		&-information
+			margin: auto
+			margin-top: 40px
+			width: 80%
+	.information
+		&__title
+			text-align: center
+		&-map
+			margin: auto
+			margin-bottom: 30px
+			width: 100%
+@media (max-width: 768px)
+	.contacts	
+		&-form
+			&__subtitle
+				font-size: 12px
+	.information
+		&-contacts
+			margin: auto
+			text-align: center
+			flex-direction: column
+			align-items: center
+		&__title
+			text-align: center
+		&-map
+			margin: auto
+			margin-bottom: 30px
+			width: 100%
+		&-data
+			display: block
+			margin-bottom: 25px
+
+	@media (max-width: 567px)
+		.contacts
+			padding-bottom: 25px
+			&-form
+				&__block
+					margin: auto
+					width: 290px
+					max-height: 375px
+					padding: 20px 42px
+				&__subtitle
+					width: 65%
+				&__input
+					font-size: 12px
+					padding: 15px 0px 15px 35px
+					&__question
+						font-size: 12px
+						padding: 15px 45px 100px 35px
+						margin-bottom: 15px
+				&__button
+					padding: 15px 45px
+					font-size: 12px
+		.information
+			&-map
+				&__text
+					margin-left: 25px
+					font-size: 10px
+					width: 82%
+
+
+
+
+	
+
+

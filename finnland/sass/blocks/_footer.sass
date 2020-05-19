@@ -1,0 +1,277 @@
+.footer
+	padding: 119px 0 54px 0
+	background-color: $background-color
+	border-top-left-radius: 600px 100px
+	border-top-right-radius: 600px 100px
+	&__title
+		color: $title-color
+		font-family: 'Roboto Bold'
+		font-size: 30px
+		text-align: center
+		margin-bottom: 28px
+	&__subtitle
+		color: $text-color
+		font-family: 'Roboto Bold'
+		font-size: 14px
+		text-align: center
+		display: block
+		margin-bottom: 74px
+	&-form
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 37px 48px
+		width: 100%
+		background: $gradient
+		border-radius: 50px
+		margin-bottom: 129px
+		&__name
+			display: flex
+		&__phone
+			display: flex
+			margin-left: 13px
+		&__time
+			display: flex
+			align-items: center
+		&__button
+			background-color: #fff
+			color: $main-color
+			padding: 16px 20px
+			&:hover 
+				background: #2acfd0
+				color: #fff
+		&__icon
+			margin-right: 24px
+		&__input
+			width: 245px
+			background: transparent
+			font-family: 'Roboto Bold'
+			font-size: 14px
+			color: #fff
+			outline: none
+			border: none
+			border-bottom: 1px solid #fff
+		&__menu
+			font-family: 'Roboto Bold'
+			font-size: 14px;
+			color: #fff
+	&-wrap
+		display: flex		
+		align-items: flex-start
+		margin-bottom: 65px
+	&-description
+		margin-top: 24px	
+		margin-right: 150px
+		width: 196px
+		line-height: 1.3
+		&__logo
+			margin-bottom: 22px
+		&__text
+			color: $text-color
+			font-family: 'Roboto Bold'
+			font-size: 14px
+	&-menu
+		display: flex
+		justify-content: space-between
+		width: 853px
+	&-about
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 161px
+		font-size: 14px
+		font-family: 'Roboto Bold'
+		&__head
+			color: #485168
+		& a
+			text-decoration: none
+			color: $text-color
+			&:hover
+				text-decoration: underline
+				color: $main-color
+	&-services
+		display: flex
+		font-size: 14px
+		font-family: 'Roboto Bold'
+		&__head
+			color: #485168
+		& a
+			text-decoration: none
+			color: $text-color
+			&:hover
+				text-decoration: underline
+				color: $main-color
+		&-column
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			height: 135px
+			&-other
+				height: 74px
+				margin-left: 117px
+				margin-top: 30px
+	&-contacts
+		font-size: 14px
+		font-family: 'Roboto Bold'
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 104px
+		margin-right: 12px
+		&__head
+			color: #485168
+		& a
+			text-decoration: none
+			color: $text-color
+			&:hover
+				text-decoration: underline
+				color: $main-color
+	&-copyright
+		color: $text-color
+		font-family: 'Roboto Bold'
+		font-size: 14px
+
+@media (max-width: 1200px)
+	.footer
+		padding-top: 80px
+		&-form
+			margin-bottom: 100px
+			&__icon
+				margin-right: 15px
+			&__button
+				font-size: 13px
+			&__input
+				width: 160px
+		&-description
+			margin-right: 70px
+		&-services
+			width: 380px
+			&-column
+				&-other
+					margin-left: 50px
+			
+@media (max-width: 992px)
+		.footer
+			padding-bottom: 25px
+			&__title
+				font-size: 30px
+				margin: auto
+				margin-bottom: 20px
+			&__subtitle
+				margin: auto
+				margin-bottom: 20px
+			&-form
+				width: 450px
+				margin: auto
+				display: flex
+				flex-direction: column
+				margin-bottom: 30px
+				&__name
+					margin: auto
+					margin-bottom: 30px
+				&__phone
+					margin: auto
+					margin-bottom: 30px
+				&__time
+					margin: auto
+					margin-bottom: 30px
+				&__button
+					width: 80%
+					&:hover 
+						background-color: #fff
+						color: $main-color
+			&-wrap
+				flex-direction: column-reverse
+			&-menu
+				width: 100%
+			&-about
+				& a
+					&:hover
+						text-decoration: none
+						color: $text-color
+			&-contacts
+				& a
+					&:hover
+						text-decoration: none
+						color: $text-color
+			&-services
+				& a
+					&:hover
+						text-decoration: none
+						color: $text-color
+
+@media (max-width: 768px)
+	.footer
+		padding-top: 40px
+		&__title
+			width: 410px
+		&__subtitle
+			width: 410px
+		&-form
+			width: 410px
+		&-menu
+			flex-wrap: wrap
+			width: 345px
+		&-about
+			margin-bottom: 20px
+			width: 150px
+		&-services
+			margin-bottom: 20px
+			order: -1
+			width: 100%
+		&-contacts
+			margin-bottom: 20px
+			width: 150px
+		&-wrap
+			padding-left: 20%
+		&-copyright
+			padding-left: 20%
+
+@media (max-width: 567px)
+	.footer
+		&__title
+			width: 280px
+		&__subtitle
+			width: 280px
+		&-form
+			width: 280px
+			margin-bottom: 25px
+			&__input
+				font-size: 12px
+			&__button
+				width: 100%
+		&-wrap
+			flex-direction: column-reverse
+			margin-bottom: 25px
+			padding-left: 4%
+		&-menu
+			flex-wrap: wrap
+			width: 290px
+		&-about
+			width: 120px
+			height: 140px
+			margin-bottom: 20px
+		&-services
+			width: 100%
+			height: 120px
+			margin-bottom: 20px
+			&-column
+				height: 120px
+				&-other
+					margin-left: 10%
+					height: 80px
+		&-contacts
+			width: 120px
+			height: 90px
+		&-copyright
+			padding-left: 4%
+		
+
+		
+
+		
+			
+
+
+			
+			

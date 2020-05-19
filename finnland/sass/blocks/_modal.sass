@@ -1,0 +1,113 @@
+.modal
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(#000, 0.5)
+	display: none
+	&_active
+		display: flex
+	&-dialog
+		position: relative
+		margin: auto
+		width: 500px
+		max-height: 575px
+		background-color: #fff
+		padding: 40px 62px
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+		&__close
+			position: absolute
+			top: 0
+			right: 0
+			background: $gradient
+			border: none
+			color: #fff
+			&:hover
+				cursor: pointer
+		&__input
+			width: 100%
+			margin-bottom: 16px
+			background-color: $background-color
+			border: none
+			color: $text-color
+			font-family: "Roboto Bold"
+			font-size: 14px
+			padding: 24px 0px 23px 45px
+			outline: none
+			&:focus
+				outline: none
+				border: 1px solid $main-color
+			&__question
+				width: 100%
+				margin-bottom: 41px
+				background-color: $background-color
+				border: none
+				color: $text-color
+				font-family: "Roboto Bold"
+				font-size: 14px
+				padding: 25px 45px 129px 45px
+				outline: none
+				&:focus
+					outline: none
+					border: 1px solid $main-color
+		&__button
+			width: 100%
+			background: $gradient
+			color: #fff
+			&:hover 
+				background: #2acfd0
+.modal-dialog input::placeholder
+	color: $text-color
+@media (max-width: 992px)
+	.modal
+		&-dialog
+			margin: auto
+			width: 470px
+			max-height: 475px
+			padding: 30px 52px
+			&__input
+				font-size: 13px
+				padding: 15px 0px 15px 35px
+				&__question
+					font-size: 13px
+					padding: 15px 45px 100px 35px
+					margin-bottom: 20px
+			&__button
+				&:hover 
+					background: $gradient
+@media (max-width: 768px)
+	.modal
+		&-dialog
+			margin: auto
+			width: 370px
+			max-height: 475px
+			padding: 30px 52px
+			&__input
+				font-size: 13px
+				padding: 15px 0px 15px 35px
+				&__question
+					font-size: 13px
+					padding: 15px 45px 100px 35px
+					margin-bottom: 15px
+@media (max-width: 567px)
+	.modal
+		&-dialog
+			margin: auto
+			width: 290px
+			max-height: 375px
+			padding: 20px 42px
+			&__input
+				font-size: 12px
+				padding: 15px 0px 15px 35px
+				&__question
+					font-size: 12px
+					padding: 15px 45px 100px 35px
+					margin-bottom: 15px
+			&__button
+				padding: 15px 45px
+				font-size: 12px
+				

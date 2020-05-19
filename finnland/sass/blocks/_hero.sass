@@ -1,0 +1,212 @@
+.hero
+	padding: 109px 0px
+	&-image
+		position: absolute
+		top: 0
+		right: 0
+		z-index: -5
+		width: 960px
+		height: 853px
+		&__jaw
+			position: absolute
+			top: 596px
+			left: 87px
+			z-index: -5
+	&-info
+		&__title
+			color: $title-color
+			font-family: 'Roboto Bold';
+			font-size: 43px
+			line-height: 48px
+			max-width: 590px
+			margin-bottom: 29px
+		&__subtitle
+			color: $text-color
+			font-family: 'Roboto Bold'
+			font-size: 15px
+			line-height: 25px
+			max-width: 450px
+			margin-bottom: 43px
+		&__streak
+			color: $main-color
+			display: flex
+			align-items: center
+			height: 5px
+			width: 40px
+			font-family: 'Roboto Bold'
+			margin-bottom: 25px
+		&__text
+			color: $text-color
+			font-family: 'Roboto Bold'
+			font-size: 14px
+			line-height: 24px	
+			margin-bottom: 141px
+			&__blue
+				color: $main-color
+	&-form
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 35px 48px
+		width: 100%
+		background: $gradient
+		border-radius: 50px
+		&__name
+			display: flex
+		&__phone
+			display: flex
+			margin-left: 14px
+		&__time
+			display: flex
+			align-items: center
+		&__button
+			background-color: #fff
+			color: $main-color
+			padding: 17px 19px
+			&:hover 
+				background: #2acfd0
+				color: #fff
+		&__icon
+			margin-right: 24px
+		&__input
+			width: 240px
+			background: transparent
+			font-family: 'Roboto Bold'
+			font-size: 14px;
+			color: #fff
+			outline: none
+			border: none
+			border-bottom: 1px solid #fff
+		&__menu
+			font-family: 'Roboto Bold'
+			font-size: 14px;
+			color: #fff
+::placeholder 
+	color: #fff
+	opacity: 1
+
+.select
+	background: url(../img/form-arrow.png) no-repeat right
+	&:hover
+		cursor: pointer
+	& select
+    border-radius: 0
+    background: transparent
+    height: 30px
+    padding: 4px
+    border: 0
+    font-size: 14px
+    line-height: 1
+    -webkit-appearance: none
+    width: 120px
+
+@media (max-width: 1600px)
+	.hero
+		&-image
+			width: 760px
+			height: 653px
+@media (max-width: 1300px)
+	.hero
+		&-image
+			width: 660px
+			height: 553px
+@media (max-width: 1200px)
+	.hero
+		padding-bottom: 50px
+		&-image
+			width: 480px
+			height: 430px
+			&__jaw
+				display: none
+		&-info
+			&__title
+				font-size: 33px
+			&__text
+				margin-bottom: 30px
+		&-form
+			&__icon
+				margin-right: 15px
+			&__button
+				font-size: 13px
+			&__input
+				width: 160px
+	@media (max-width: 992px)
+		.hero
+			padding-bottom: 25px
+			padding-top: 30px
+			&-image
+				display: none
+			&-info
+				&__title
+					font-size: 30px
+					margin: auto
+					margin-bottom: 20px
+				&__subtitle
+					margin: auto
+					margin-bottom: 20px
+				&__streak
+					margin: auto
+					width: 450px
+					margin-bottom: 20px
+				&__text
+					margin: auto
+					width: 450px
+					margin-bottom: 20px
+			&-form
+				width: 450px
+				margin: auto
+				display: flex
+				flex-direction: column
+				&__name
+					margin: auto
+					margin-bottom: 30px
+				&__phone
+					margin: auto
+					margin-bottom: 30px
+				&__time
+					margin: auto
+					margin-bottom: 30px
+				&__button
+					width: 80%
+					&:hover 
+						background-color: #fff
+						color: $main-color
+	@media (max-width: 768px)
+		.hero
+			&-info
+				&__title
+					width: 410px
+				&__subtitle
+					width: 410px
+				&__streak
+					width: 410px
+				&__text
+					width: 410px
+			&-form
+				width: 410px
+	@media (max-width: 567px)
+		.hero
+			&-info
+				&__title
+					width: 280px
+				&__subtitle
+					width: 280px
+				&__streak
+					width: 280px
+				&__text
+					width: 280px
+			&-form
+				width: 280px
+				&__button
+					width: 100%
+				&__input
+					font-size: 12px
+
+				
+				
+
+
+
+
+
+

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Стоматологическая студия Финнланд</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar">
+		<div class="container">
+			<div class="navbar-block">
+				<div class="navbar__logo">
+					<img class="logo lazy" src="img/logo.png" alt="Логотип">
+				</div>
+				<!-- /.navbar__logo -->
+				<div class="navbar__links" id="menu">
+					<ul class="navbar-menu">
+						<li class="navbar-menu__list"><a href="#yak1">О компании</a></li>
+						<!-- /.navbar-menu__list -->
+						<li class="navbar-menu__list"><a href="#yak2">Услуги</a></li>
+						<!-- /.navbar-menu__list -->
+						<li class="navbar-menu__list" id="price-button"><a href="#">Цены</a></li>
+						<!-- /.navbar-menu__list -->
+						<li class="navbar-menu__list"><a href="#yak3">Контакты</a></li>
+						<!-- /.navbar-menu__list -->
+					</ul>
+					<!-- /.navbar-menu -->
+				</div>
+				<!-- /.navbar__links -->
+				
+				<div class="wrapper-burger" id="burger">
+					<input type="checkbox" id="check-menu">
+					<label for="check-menu" class="check-menu">Меню</label>
+					<div class="burger-line first"></div>
+					<div class="burger-line second"></div>
+					<div class="burger-line third"></div>
+					<div class="burger-line fourth"></div>
+					<div class="main-menu">
+						<a href="#yak1">О компании</a>
+						<a href="#yak2">Услуги</a>
+						<a href="#">Цены</a>
+						<a href="#yak3">Контакты</a>
+					</div>
+				</div>
+				
+				<div class="navbar-info">
+					<div class="navbar-contact">
+						<a href="tel:8(390)254-63-25" class="navbar-contact__phone">8 (390) 254-63-25</a>
+					</div>
+					<button class="button navbar__button" onclick="ym(55075861, 'reachGoal', 'button'); return true;" id="navbar-button">Заказать звонок</button>
+				</div>
+				<!-- /.navbar__info -->
+			</div>
+			<!-- /.navbar-block -->
+		</div>
+		<!-- /.container -->
+	</nav>
+	<!-- /.navbar -->
+
+	<section class="hero">
+		<div class="container">
+			<div class="hero-info">
+				<div class="hero-image">
+					<img class="yourClass lazy" src="img/main-image.jpg" alt="Девушка стоматолог">
+				</div>
+				<h1 class="hero-info__title" id="yak1">Стоматологическая клиника Финнланд</h1>
+				<!-- /.hero-info__title -->
+				<p class="hero-info__subtitle">Современная стоматология Финнланд в Центральном районе рада приветствовать вас! Ее создание стало результатом
+				многолетней совместной деятельности коллектива</p>
+				<!-- /.hero-info__subtitle -->
+				<span class="hero-info__streak">----</span>
+				<!-- /.hero-info__streak -->
+				<p class="hero-info__text">Хотите попасть на прием? <span class="hero-info__text__blue">Заполните форму ниже</span></p>
+				<!-- /.hero-info__text -->
+			</div>
+			<!-- /.hero-info -->
+			<div class="hero-image__jaw">
+				<img src="img/jaw.jpg" alt="Челюсть">
+			</div>
+			<form action="mail.php" method="POST" class="form hero-form" id="hero-form">
+				<div class="hero-form__name">
+					<div class="hero-form__icon">
+						<img class="icon lazy" src="img/icon_name.png" alt="Иконка человека">
+					</div>
+					<input type="text" class="hero-form__input" name="username" id="hero-username" placeholder="Ваше имя">
+				</div>
+				<!-- /.hero-form__name -->
+				<div class="hero-form__phone">
+					<div class="hero-form__icon">
+						<img class="icon lazy" src="img/icon_phone.png" alt="Иконка телефона">
+					</div>
+					<input type="text" class="hero-form__input" id="hero-phone" name="userphone" placeholder="Ваш телефон">
+				</div>
+				<!-- /.hero-form__phone -->
+				<div class="hero-form__time">
+					<div class="hero-form__icon">
+						<img class="icon lazy" src="img/icon_time.png" alt="Иконка часов">
+					</div>
+					<div class="select">
+						<select class="footer-form__menu" name="select" id="hero-select">
+							<option value="">Удобное время</option>
+							<option value="12:00">12:00</option>
+							<option value="13:00">13:00</option>
+							<option value="14:00">14:00</option>
+							<option value="15:00">15:00</option>
+							<option value="16:00">16:00</option>
+							<option value="17:00">17:00</option>
+							<option value="18:00">18:00</option>
+						</select>
+					</div>
+				</div>
+				<!-- /.hero-form__time -->
+				<button type="submit" class="button hero-form__button">Записаться на прием</button>
+				<!-- /.button hero-form__button -->
+			</form>
+			<!-- /.hero-form -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.hero -->
+	
+	<section class="services">
+		<div class="container">
+			<div class="services-block" id="yak2">
+				<h2 class="services__title">Наши услуги</h2>
+				<!-- /.services__title -->
+				<div class="span services__subtitle">Репутация важнее денег. Над ней не властны ни инфляции, ни кризисы.</div>
+				<!-- /.span services__subtitle -->
+				<div class="services-cards responsive">
+					<div class="services-card">
+						<div class="services-card__image">
+							<img class="yourClass lazy" src="img/services/icon_1.png" alt="Лечение зубов">
+						</div>
+						<!-- /.services-card__image -->
+						<div class="services-card__text">Лечение зубов</div>
+						<!-- /.services-card__text -->
+						<div class="services-card__arrow">
+							<img class="yourClass lazy" src="img/services/icon_5.png" alt="Стрелка">
+						</div>
+					</div>
+					<!-- /.services-card -->
+					<div class="services-card">
+						<div class="services-card__image">
+							<img class="icon lazy" src="img/services/icon_2.png" alt="Детский прием">
+						</div>
+						<!-- /.services-card__image -->
+						<div class="services-card__text">Детский прием</div>
+						<!-- /.services-card__text -->
+						<div class="services-card__arrow">
+							<img class="icon lazy" src="img/services/icon_5.png" alt="Стрелка">
+						</div>
+					</div>
+					<!-- /.services-card -->
+					<div class="services-card">
+						<div class="services-card__image">
+							<img class="icon lazy" src="img/services/icon_3.png" alt="Протезирование">
+						</div>
+						<!-- /.services-card__image -->
+						<div class="services-card__text">Протезирование</div>
+						<!-- /.services-card__text -->
+						<div class="services-card__arrow">
+							<img class="icon lazy" src="img/services/icon_5.png" alt="Стрелка">
+						</div>
+					</div>
+					<!-- /.services-card -->
+					<div class="services-card">
+						<div class="services-card__image">
+							<img class="icon lazy" src="img/services/icon_4.png" alt="Ортодонтия">
+						</div>
+						<!-- /.services-card__image -->
+						<div class="services-card__text">Ортодонтия</div>
+						<!-- /.services-card__text -->
+						<div class="services-card__arrow">
+							<img class="icon lazy" src="img/services/icon_5.png" alt="Стрелка">
+						</div>
+					</div>
+					<!-- /.services-card -->
+					<div class="services-card">
+						<div class="services-card__image">
+							<img class="icon lazy" src="img/services/icon_1.png" alt="Лечение зубов">
+						</div>
+						<!-- /.services-card__image -->
+						<div class="services-card__text">Лечение зубов</div>
+						<!-- /.services-card__text -->
+						<div class="services-card__arrow">
+							<img class="icon lazy" src="img/services/icon_5.png" alt="Стрелка">
+						</div>
+					</div>
+					<!-- /.services-card -->
+					<div class="services-card">
+						<div class="services-card__image">
+							<img class="icon lazy" src="img/services/icon_2.png" alt="Детский прием">
+						</div>
+						<!-- /.services-card__image -->
+						<div class="services-card__text">Детский прием</div>
+						<!-- /.services-card__text -->
+						<div class="services-card__arrow">
+							<img class="icon lazy" src="img/services/icon_5.png" alt="Стрелка">
+						</div>
+					</div>
+					<!-- /.services-card -->
+				</div>
+				<!-- /.services-cards -->
+				<button class="button services-button" id="services-button">Все услуги</button> 
+				<!-- /.button services-button -->
+			</div>
+			<!-- /.services-block -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.services -->
+
+	<section class="description">
+		<div class="container">
+			<h2 class="description__title">Почему мы?</h2>
+			<!-- /.description__title -->
+			<div class="description-block">
+				<div class="description-card wow bounceInUp">
+					<div class="description__image">
+						<img class="description_icon lazy" src="img/description/icon_1.png" alt="">
+					</div>
+					<!-- /.description__image -->
+					<div class="description-info ">
+						<h3 class="description-info__title">Современное оборудование</h3>
+						<!-- /.description-info__title -->
+						<span class="description-info__text">Только самое современное оборудование, в состав которого входит новейший цифровой рентгеновский аппарат</span>
+						<!-- /.description-info__text -->
+					</div>
+					<!-- /.description-info -->
+				</div>
+				<!-- /.description-card -->
+				<div class="description-card wow bounceInUp"">
+					<div class="description__image">
+						<img class="description_icon lazy" src="img/description/icon_2.png" alt="">
+					</div>
+					<!-- /.description__image -->
+					<div class="description-info">
+						<h3 class="description-info__title">Опытное руководоство и ведущие специалисты</h3>
+						<!-- /.description-info__title -->
+						<span class="description-info__text">Нами руководит опытный врач, стаж работы которого в стоматологии более 15 лет.</span>
+						<!-- /.description-info__text -->
+					</div>
+					<!-- /.description-info -->
+				</div>
+				<!-- /.description-card -->
+				<div class="description-card wow bounceInUp">
+					<div class="description__image">
+						<img class="description_icon lazy" src="img/description/icon_3.png" alt="">
+					</div>
+					<!-- /.description__image -->
+					<div class="description-info">
+						<h3 class="description-info__title">Демократичные цены</h3>
+						<!-- /.description-info__title -->
+						<span class="description-info__text">Ценовая политика в нашей стоматологической клинике<br> весьма демократичная и подойдет каждому клиенту</span>
+						<!-- /.description-info__text -->
+					</div>
+					<!-- /.description-info -->
+				</div>
+				<!-- /.description-card -->
+				<div class="description-card wow bounceInUp">
+					<div class="description__image">
+						<img class="description_icon lazy" src="img/description/icon_4.png" alt="">
+					</div>
+					<!-- /.description__image -->
+					<div class="description-info">
+						<h3 class="description-info__title">Безопасность лечения</h3>
+						<!-- /.description-info__title -->
+						<span class="description-info__text">Одноразовые расходные материалы, лучшие стерилизационные системы. Мы гарантируем безопасность лечения</span>
+						<!-- /.description-info__text -->
+					</div>
+					<!-- /.description-info -->
+				</div>
+				<!-- /.description-card -->
+			</div>
+			<!-- /.description-block -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.description -->
+
+	<section class="reviews">
+		<div class="container">
+			<h2 class="reviews__title">Отзывы<br><span class="reviews__title__blue">наших пациентов</span></h2>
+			<!-- /.reviews__title -->
+			<div class="reviews-block multiple-items">
+				<div class="reviews-card">
+					<div class="reviews-card__icon">
+						<img src="img/reviews/inverted-comma.png" alt="Кавычки">
+					</div>
+					<!-- /.reviews-card__icon -->
+					<div class="reviews-card-info">
+						<div class="reviews-card__image">
+							<img class="reviews_photo lazy" src="img/reviews/photo_1.jpg" alt="">
+						</div>
+						<!-- /.reviews-card__image -->
+						<p class="reviews-card__text">Спасибо вашей стоматологии за быструю и качественную работу. Лечились у вас всей семьей и остались очень довольны! Теперь будем обслуживаться только у вас.<br>Советуем всем посетить стоматологию “Финнланд”</p>
+						<!-- /.reviews-card__text -->
+						<span class="reviews-card__name">Елизавета Бубновна</span>
+						<!-- /.reviews-card__name -->
+						<span class="reviews-card__date">01.01.2018</span>
+						<!-- /.reviews-card__date -->
+					</div>
+					<!-- /.reviews-card-info -->
+				</div>
+				<!-- /.reviews-card -->
+				<div class="reviews-card">
+					<div class="reviews-card__icon">
+						<img src="img/reviews/inverted-comma.png" alt="Кавычки">
+					</div>
+					<!-- /.reviews-card__icon -->
+					<div class="reviews-card-info">
+						<div class="reviews-card__image">
+							<img class="reviews_photo lazy" src="img/reviews/photo_2.jpg" alt="">
+						</div>
+						<!-- /.reviews-card__image -->
+						<p class="reviews-card__text">Спасибо вашей стоматологии за быструю и качественную работу. Лечились у вас всей семьей и остались очень довольны! Теперь будем обслуживаться только у вас.<br>Советуем всем посетить стоматологию “Финнланд”</p>
+						<!-- /.reviews-card__text -->
+						<span class="reviews-card__name">Анастасия Петрова</span>
+						<!-- /.reviews-card__name -->
+						<span class="reviews-card__date">01.01.2018</span>
+						<!-- /.reviews-card__date -->
+					</div>
+					<!-- /.reviews-card-info -->
+				</div>
+				<!-- /.reviews-card -->
+				<div class="reviews-card">
+					<div class="reviews-card__icon">
+						<img src="img/reviews/inverted-comma.png" alt="Кавычки">
+					</div>
+					<!-- /.reviews-card__icon -->
+					<div class="reviews-card-info">
+						<div class="reviews-card__image">
+							<img class="reviews_photo lazy" src="img/reviews/photo_1.jpg" alt="">
+						</div>
+						<!-- /.reviews-card__image -->
+						<p class="reviews-card__text">Спасибо вашей стоматологии за быструю и качественную работу. Лечились у вас всей
+							семьей и остались очень довольны! Теперь будем обслуживаться только у вас.<br>Советуем всем посетить стоматологию
+							“Финнланд”</p>
+						<!-- /.reviews-card__text -->
+						<span class="reviews-card__name">Елизавета Бубновна</span>
+						<!-- /.reviews-card__name -->
+						<span class="reviews-card__date">01.01.2018</span>
+						<!-- /.reviews-card__date -->
+					</div>
+					<!-- /.reviews-card-info -->
+				</div>
+				<!-- /.reviews-card -->
+			</div>
+			<!-- /.reviews-block -->
+			<div class="arrows reviews__arrows">
+				<div class="arrows__left">
+					<img src="img/left__arrow.png" alt="">
+				</div>
+				<div class="arrows__right">
+					<img src="img/right__arrow.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.reviews -->
+
+	<section class="contacts">
+		<div class="container">
+			<div class="contacts-info">
+				<div class="contacts-form">
+					<h3 class="contacts-form__title">Остались вопросы?</h3>
+					<span class="contacts-form__subtitle">Заполните форму и наши сотрудники свяжутся с вами в ближайшее время и ответят
+						на все интересующие вас вопросы</span>
+					<form action="mail.php" method="POST" class="contacts-form__block" id="contacts-form">
+						<input type="text" name="username" class="contacts-form__input" autocomplete="off" id="contacts-username" placeholder="Ваше имя">
+						<input type="tel" name="userphone" class="contacts-form__input" autocomplete="off" id="contacts-phone" placeholder="Ваш телефон">
+						<input type="text" name="userquestion" class="contacts-form__input__question" autocomplete="off" id="contacts-question" placeholder="Ваш вопрос...">
+						<button type="submit" class="button contacts-form__button" id="form-button">Отправить вопрос</button>
+					</form>
+				</div>
+				<!-- /.contacts-modal -->
+				<div class="contacts-information">
+					<div class="information-map">
+						<div class="map" id="map">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2228.158076327297!2d92.96972538083084!3d56.05056512991575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5cd7a58d29b5238d%3A0x71616d5e61bf8de7!2z0YPQuy4g0KLQtdC70YzQvNCw0L3QsCwg0JrRgNCw0YHQvdC-0Y_RgNGB0LosINCa0YDQsNGB0L3QvtGP0YDRgdC60LjQuSDQutGA0LDQuSwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2sby!4v1566838155386!5m2!1sru!2sby"
+								width="100%" height="481" style="border:0;" allowfullscreen=""></iframe>
+						</div>
+						<span class="information-map__text">К нам очень легко добраться. Вы можете связаться с нами по укзанным контактам
+							или же заполнить форму и наши сотрудники проконсультируют вас по всем вопросам</span>
+					</div>
+					<div class="information-block">
+						<h3 class="information__title" id="yak3">Контактная информация</h3>
+						<!-- /.information__title -->
+						<div class="information-contacts">
+							<div class="information-data">
+								<span class="information-data__title">Номера телефонов:</span>
+								<a href="tel:+7(390)2546325" class="information-data__text">+7 (390) 254 63 25</a>
+								<a href="tel:+7(390)4771249" class="information-data__text">+7 (390) 477 12 49</a>
+							</div>
+							<div class="information-data">
+								<span class="information-data__title">Адрес:</span>
+								<address class="information-data__text">г. Красноярск, район Центр, ул. Тельмана, д. 35</address>
+							</div>
+							<div class="information-data">
+								<span class="information-data__title">E-mail:</span>
+								<a href="mailto:finland24@mail.ru" class="information-data__text">finland24@mail.ru</a>
+								<a href="mailto:finland24@mail.ru" class="information-data__text">finland24@mail.ru</a>
+							</div>
+						</div>
+						<!-- /.information-contacts -->
+					</div>
+					<!-- /.information-block -->
+				</div>
+				<!-- /.contacts-information -->
+			</div>
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.contacts -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-block">
+				<h2 class="footer__title">Запишитесь на прием прямо сейчас!</h2>
+				<span class="footer__subtitle">Отправьте заявку на прием в нашу стоматологическую клинику и наши сотрудники свяжутся с вами в ближайшее время</span>
+				<form action="mail.php" method="POST" class="form footer-form" id="footer-form">
+					<div class="footer-form__name">
+						<div class="footer-form__icon">
+							<img src="img/icon_name.png" alt="Иконка человека">
+						</div>
+						<input type="text" class="footer-form__input" name="username" id="footer-username" placeholder="Ваше имя">
+					</div>
+					<!-- /.hero-form__name -->
+					<div class="footer-form__phone">
+						<div class="footer-form__icon">
+							<img src="img/icon_phone.png" alt="Иконка человека">
+						</div>
+						<input type="text" class="footer-form__input" name="userphone" id="footer-phone" placeholder="Ваш телефон">
+					</div>
+					<!-- /.hero-form__phone -->
+					<div class="footer-form__time">
+						<div class="footer-form__icon">
+							<img src="img/icon_time.png" alt="Иконка человека">
+						</div>
+						<div class="select">
+							<select class="footer-form__menu" name="select" id="footer-select">
+								<option value="">Удобное время</option>
+								<option value="12:00">12:00</option>
+								<option value="13:00">13:00</option>
+								<option value="14:00">14:00</option>
+								<option value="15:00">15:00</option>
+								<option value="16:00">16:00</option>
+								<option value="17:00">17:00</option>
+								<option value="18:00">18:00</option>
+							</select>
+						</div>
+					</div>
+					<!-- /.footer-form__time -->
+					<button class="button footer-form__button">Записаться на прием</button>
+					<!-- /.button hero-form__button -->
+				</form>
+				<!-- /.footer-form -->
+				<div class="footer-wrap">
+					<div class="footer-description">
+						<div class="footer-description__logo">
+							<img src="img/logo.png" alt="Логотип">
+						</div>
+						<span class="footer-description__text">Репутация важнее денег. Над ней не властны ни инфляции, ни кризисы.</span>
+					</div>
+					<div class="footer-menu">
+						<div class="footer-about">
+							<span class="footer-about__head">О компании</span>
+							<a href="#">Сотрудники</a>	
+							<a href="#">Отзывы</a>	
+							<a href="#">Партнеры</a>	
+							<a href="#">Акции и скидки</a>	
+							<a href="#">Вакансии</a>	
+						</div>
+						<!-- /.footer-about -->
+						<div class="footer-services">
+							<div class="footer-services-column">
+									<span class="footer-services__head">Наши услуги</span>
+									<a href="#">Лечение зубов</a>
+									<a href="#">Детский прием</a>
+									<a href="#">Протезирование</a>
+									<a href="#">Прайс лист</a></li>
+							</div>
+							<div class="footer-services-column footer-services-column-other">
+								<a href="#">Ортодонтия</a>
+								<a href="#">Профессиональная гигиена</a>
+								<a href="#">Отбеливание зубов</a>
+							</div>
+						</div>
+						<!-- /.footer-services -->
+						<div class="footer-contacts">
+							<span class="footer-contacts__head">Контакты</span>
+							<a href="mailto:finland24@mail.ru">finland24@mail.ru</a>
+							<a href="tel:+7(390)2546325">+7 (390) 254 63 25</a>
+							<a href="tel:+7(390)4771249">+7 (390) 477 12 49</a>
+						</div>
+						<!-- /.footer-contacts -->
+					</div>
+					<!-- /.footer-menu -->
+				</div>
+				<!-- /.footer-wrap -->
+				<span class="footer-copyright">© 2012-2019 Стоматологическая студия «Финнланд»</span>
+			</div>
+			<!-- /.footer-block -->
+		</div>
+		<!-- /.container -->
+	</footer>
+	<!-- /.footer -->
+
+	<form action="mail.php" method="POST" class="modal" id="modal">
+		<div class="modal-dialog">
+			<button type="button" class="modal-dialog__close" id="close">&times;</button>
+			<input type="text" name="username" class="modal-dialog__input" id="modal-username" autocomplete="off" placeholder="Ваше имя">
+			<input type="tel" name="userphone" class="modal-dialog__input" id="modal-phone" autocomplete="off" placeholder="Ваш телефон">
+			<input type="text" name="userquestion" class="modal-dialog__input__question" id="modal-question" autocomplete="off" placeholder="Ваш вопрос...">
+			<button type="submit" class="button modal-dialog__button" id="modal-button">Отправить вопрос</button>
+		</div>
+		<!-- /.modal-dialog -->
+	</form>
+	<!-- /.modal -->
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/anchor.min.js"></script>
+	<script src="js/modal.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/validate.min.js"></script>
+	<script src="js/burger.min.js"></script>
+	<script defer src="js/metrika.js"></script>
+
+	<script>
+		new WOW().init();
+	</script>
+
+	<script>
+		$(document).ready(function() {
+		$("#footer-phone").mask("+7(999) 999-99-99");
+		$("#hero-phone").mask("+7(999) 999-99-99");
+		$("#modal-phone").mask("+7(999) 999-99-99");
+		$('#contacts-phone').mask("+7(999) 999-99-99");
+
+		$('.multiple-items').slick({
+				infinite: true,
+				dots: true,
+				dotsClass: "my-dots",
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				prevArrow: $('.arrows__left'),
+				nextArrow: $('.arrows__right'),
+				responsive: [
+				{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						infinite: true,
+						dots: true
+					}
+				},
+			]
+			});
+			$('.responsive').slick({
+				dots: false,
+				infinite: true,
+				speed: 300,
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				prevArrow: false,
+				nextArrow: false,
+				responsive: [
+					{
+						breakpoint: 1200,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1,
+						}
+					},
+					{
+						breakpoint: 992,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 567,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					},
+				]
+			});
+		});
+	</script>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/55075861" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript> <!-- /Yandex.Metrika counter -->
+</body>
+</html>

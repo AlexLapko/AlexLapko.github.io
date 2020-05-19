@@ -1,0 +1,115 @@
+.services
+	padding: 90px 0px
+	&-block
+		text-align: center
+	&__title
+		color: $title-color
+		font-family: 'Roboto Bold'
+		font-size: 30px
+		margin-bottom: 25px
+	&__subtitle
+		color: $text-color
+		font-family: 'Roboto Bold'
+		font-size: 14px
+		margin-bottom: 44px
+	&-cards
+		// display: flex
+		// justify-content: space-between
+		margin-bottom: 63px
+	&-card
+		width: 269px
+		height: 206px
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		box-shadow: 0 10px 38px rgba(18, 31, 54, 0.07)
+		border: 1px solid rgba(0, 0, 0, 0.06)
+		position: relative
+		&:hover
+			box-shadow: 0 10px 38px rgba(62, 126, 241, 0.2)
+			cursor: pointer
+		&:hover .services-card__arrow
+			display: flex
+			align-items: center
+			justify-content: center
+		&:hover .services-card__image
+			filter: grayscale(100%) contrast(0%)
+		&:hover .services-card__text
+			color: #000
+		&__image
+			width: 43px
+			height: 40px
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-bottom: 21px
+		&__text
+			color: $text-color
+			font-family: 'Roboto Bold'
+			font-size: 14px	
+		&__arrow
+			position: absolute
+			bottom: -23px
+			width: 46px
+			height: 46px
+			background-color: $main-color
+			border-radius: 50%
+			display: none
+			
+	&-button
+		color: $main-color
+		font-family: 'Roboto Bold'
+		font-size: 14px
+		padding: 18px 55px
+		background-color: $btn-color
+		transform: translateY(-32px)
+		&:hover 
+				background: #2acfd0
+				color: #fff
+
+.slick-track
+	padding: 30px 0
+.slick-active
+	width: 269px
+
+.slick-slide
+	margin: 0 22px
+	padding: 64px 0
+// .slick-list
+// 	margin: 0px -22px
+
+@media (max-width: 1200px)
+	.services
+		padding-top: 50px
+		padding-bottom: 50px
+	.slick-slide
+		margin: 0 50px
+@media (max-width: 992px)
+	.services
+		padding-bottom: 25px
+		&-card
+			&:hover
+				box-shadow: 0 10px 38px rgba(18, 31, 54, 0.07)
+				cursor: default
+			&:hover .services-card__image
+				filter: none
+			&:hover .services-card__text
+				color: $text-color
+			&__arrow
+				position: absolute
+				bottom: -23px
+				width: 46px
+				height: 46px
+				background-color: $main-color
+				border-radius: 50%
+				display: flex
+				align-items: center
+				justify-content: center
+		&-button
+			&:hover 
+					background: $btn-color
+					color: $main-color
+				
+	
+			
