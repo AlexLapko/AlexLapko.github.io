@@ -1,0 +1,142 @@
+/* Слайдер */
+.slick-slider
+	
+/* Слайдер запущен */
+.slick-slider.slick-initialized
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted
+
+/* Ограничивающая оболочка */
+.slick-list 
+	overflow: hidden
+/* Лента слайдов */
+.slick-track
+	display: flex
+/* Слайд */
+.slick-slide
+	
+/* Слайд активный (показывается) */
+.slick-slide.slick-active
+	outline: none
+
+/* Слайд основной */
+.slick-slide.slick-current
+
+/* Слайд по центру */
+.slick-slide.slick-center
+
+/* Клонированный слайд */
+.slick-slide.slick-cloned
+
+/* Стрелка */
+.slick-arrow
+
+/* Стрелка влево */
+.slick-arrow.slick-prev
+
+/* Стрелка вправо */
+.slick-arrow.slick-next
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled
+
+/* Точки (булиты) */
+.slick-dots
+	padding: 0
+.slick-dots li
+.slick-dots button
+
+/* Активная точка */
+.slick-dots li.slick-active
+
+/* Элемент точки */
+.slick-dots li button
+
+
+
+/*Настройки для главного слайдера*/
+
+/* Стрелка */
+.main-slider 
+	.slick-dots
+		display: flex
+		align-items: center
+		justify-content: flex-start
+		margin: 0
+		transform: translateY(-80px)
+		& li
+			list-style: none
+			margin-right: 5px
+			&.slick-active
+				& button
+					background-color: #823E9A
+		& button
+			font-size: 0
+			width: 34px
+			height: 4px
+			background-color: #EBEBEB
+			border: none
+			border-radius: 2px
+			outline: none
+			&:hover
+				cursor: pointer
+
+/*Настройки для слайдера с отзывами*/
+.review-slider
+	position: relative
+	padding: 0px 59px
+	.slick-dots
+		display: flex
+		align-items: center
+		justify-content: center
+		margin: 0 auto
+		margin-top: 34px
+		width: 10%
+		& li
+			list-style: none
+			margin-right: 5px
+			&.slick-active
+				& button
+					background-color: #823E9A
+		& button
+			font-size: 0
+			width: 10px
+			height: 10px
+			background-color: #EBEBEB
+			border: none
+			border-radius: 50%
+			outline: none
+			&:hover
+				cursor: pointer
+	.slick-arrow
+		margin-top: -33px
+		position: absolute
+		top: 50%
+		z-index: 10
+		font-size: 0		
+		width: 36px
+		height: 36px
+		border: none
+		padding: 11px 14.5px
+		border-radius: 50%
+		outline: none
+		&:hover
+			cursor: pointer
+
+	.slick-arrow.slick-prev
+		left: 0
+		background: url('../img/review/review-arrow.svg') no-repeat center #EBEBEB
+		transform: rotate(-180deg)
+		&:hover
+			background: url('../img/arrow.svg') no-repeat center #823E9A
+	.slick-arrow.slick-next
+		background: url('../img/review/review-arrow.svg') no-repeat center #EBEBEB
+		right: 0
+		transform: rotate(0deg)
+		&:hover
+			background: url('../img/arrow.svg') no-repeat center #823E9A 
+			
+
+		
+	
